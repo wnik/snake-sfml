@@ -16,8 +16,8 @@ namespace Snake {
 		void setupBox(ResourceManager & rManager);
 		void setupTitle(ResourceManager & rManager);
 
-		      sf::Vector2f         getBoxPos();
-			  sf::Vector2f         getBoxSize();
+		sf::Vector2f               getBoxPos();
+		sf::Vector2f               getBoxSize();
 		const sf::RectangleShape & getBox()   const;
 		const sf::Text           & getTitle() const;
 
