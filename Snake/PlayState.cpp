@@ -103,12 +103,12 @@ unsigned int Snake::PlayState::calculateScore()
 {
 	unsigned int tempScore                = 0;
 	float        tempDistancePoints[7][2] = { 30.0f, 2,
-											  25.0f, 3,
-											  20.0f, 4,
-											  15.0f, 5,
-											  10.0f, 6,
-											  6.0f,  7,
-											  3.0f,  8,
+						  25.0f, 3,
+						  20.0f, 4,
+						  15.0f, 5,
+						  10.0f, 6,
+						  6.0f,  7,
+						  3.0f,  8,
 	                                        };
 
 	unsigned int tempDistance = mPlayer->getTraveledDistance();
