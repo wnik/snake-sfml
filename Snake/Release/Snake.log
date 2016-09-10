@@ -1,7 +1,0 @@
-﻿  Generating code
-  0 of 2571 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    42 functions had inline decision re-evaluated but remain unchanged
-  Finished generating code
-  Snake.vcxproj -> C:\Users\gowno\documents\visual studio 2015\Projects\Snake\Release\Snake.exe
-  Snake.vcxproj -> C:\Users\gowno\documents\visual studio 2015\Projects\Snake\Release\Snake.pdb (Full PDB)
