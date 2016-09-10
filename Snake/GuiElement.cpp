@@ -11,13 +11,13 @@ Snake::GuiElement::GuiElement(
 	unsigned int marginBottom,
 	bool boldText)
 {
-	this->mSize = size;
-	this->mLabel = label;
-	this->mAction = action;
-	this->mTheme = theme;
-	this->mPadding = padding;
-	this->mMarginBottom = marginBottom;
-	this->mBoldText = boldText ? true : false;
+	mSize = size;
+	mLabel = label;
+	mAction = action;
+	mTheme = theme;
+	mPadding = padding;
+	mMarginBottom = marginBottom;
+	mBoldText = boldText ? true : false;
 	constructShape();
 	constructText();
 	centerOrigin();
