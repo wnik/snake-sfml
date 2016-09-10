@@ -10,7 +10,7 @@ namespace Snake {
 	{
 	public:
 
-				 Instructions(std::string title, sf::Vector2f windowSize, std::unordered_map<std::string, std::string> descriptions);
+		         Instructions(std::string title, sf::Vector2f windowSize, std::unordered_map<std::string, std::string> descriptions);
 		        ~Instructions();
 
 		void     setTextSettings();
