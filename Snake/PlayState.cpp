@@ -101,41 +101,30 @@ void Snake::PlayState::draw()
 
 unsigned int Snake::PlayState::calculateScore()
 {
-	unsigned int tempScore    = 0;
+	unsigned int tempScore                = 0;
+	float        tempDistancePoints[7][2] = { 30.0f, 2,
+											  25.0f, 3,
+											  20.0f, 4,
+											  15.0f, 5,
+											  10.0f, 6,
+											  6.0f,  7,
+											  3.0f,  8,
+	                                        };
+
 	unsigned int tempDistance = mPlayer->getTraveledDistance();
+	unsigned int rows         = sizeof(tempDistancePoints) / sizeof(tempDistancePoints[0]);
 
-	if (tempDistance < 3.0f)
-	{
-		tempScore = 8;
-	}
-	else if (tempDistance < 6.0f)
-	{
-		tempScore = 7;
-	}
-	else if (tempDistance < 10.0f)
-	{
-		tempScore = 6;
-	}
-	else if (tempDistance < 15.0f)
-	{
-		tempScore = 5;
-	}
-	else if (tempDistance < 20.0f)
-	{
-		tempScore = 4;
-	}
-	else if (tempDistance < 25.0f)
-	{
-		tempScore = 3;
-	}
-	else if (tempDistance < 30.0f)
-	{
-		tempScore = 2;
-	}
-	else
-		tempScore = 1;
 
-	return tempScore;
+	for (unsigned int i = 0; i < rows; ++i)
+	{
+		if (tempDistance < tempDistancePoints[i][0])
+		{
+			tempScore = tempDistancePoints[i][1];
+		}
+
+	}
+
+	return tempScore != 0 ? tempScore : 1;
 }
 
 void Snake::PlayState::collisionPlayerVsBorder()
