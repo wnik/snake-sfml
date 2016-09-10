@@ -60,7 +60,7 @@ void Snake::ResourceManager::loadStyles()
 	mThemes["instructions"]    = Snake::GuiStyle({ { "text",                sf::Color(0, 0, 0, 255) } });
 	//////////////////////////////////////////////////////////////////////////////////////////////////
 	mThemes["gameOver"]        = Snake::GuiStyle({ { "title",               sf::Color(50, 50, 50, 255) },
-											       { "score",               sf::Color(202, 105, 36, 255) } });
+						       { "score",               sf::Color(202, 105, 36, 255) } });
 }
 
 bool Snake::ResourceManager::isTextureLoaded(const std::string & filename) const
